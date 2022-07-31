@@ -12,6 +12,8 @@ Function Connect-AutGraph {
         [ValidateSet ("0","3","5","7")]$Retry = "0",
         [Parameter(Mandatory = $True)]$access_Token)
 
+
+        # will add a check here for other api endpoints like azure to create the endpoint.
         $URIForApplicationPermissionCall = https://$ApiProvider/$GraphVersion/$EndPoint
 
     # Try to access graph information X times
