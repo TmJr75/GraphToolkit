@@ -6,7 +6,7 @@ Function Connect-AutGraph {
     [CmdletBinding()]
     Param(
         [ValidateSet("V1.0","Beta")]$GraphVersion = "Beta",
-        [ValidateSet("manage.microsoft.com/api","graph.microsoft.com","manage.office.com/api")]$APIProvider ="Graph.Microsoft.Com" ,
+        [ValidateSet("manage.microsoft.com/api","graph.microsoft.com","manage.office.com/api")]$APIProvider ="Graph.Microsoft.Com",
         $EndPoint = "Users",
         [validateset ("Yes","No")]$All="NO",
         [ValidateSet ("0","3","5","7")]$Retry = "0",
@@ -14,7 +14,7 @@ Function Connect-AutGraph {
 
 
         # will add a check here for other api endpoints like azure to create the endpoint.
-        $URIForApplicationPermissionCall = https://$ApiProvider/$GraphVersion/$EndPoint
+        $URIForApplicationPermissionCall = "https://$ApiProvider/$GraphVersion/$EndPoint"
 
     # Try to access graph information X times
     $Stoploop = $false
