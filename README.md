@@ -12,5 +12,6 @@ These values can be found on your application in Azure.
 $Token = Get-AutRefreshToken -AppId $AppId -appSecret $AppSecret -tenantId $TenantId
 
 Example on how to query Graph Api for all Users.
+
 Connect-AutGraph -Endpoint "Users" -Access_token $Token -All Yes
 
