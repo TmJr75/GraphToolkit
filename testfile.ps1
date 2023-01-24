@@ -1,0 +1,1 @@
+Write-Output "This task has run on following host: $($env:COMPUTERNAME)"
