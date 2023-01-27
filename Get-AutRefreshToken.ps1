@@ -36,4 +36,4 @@ Function Get-AutRefreshToken {
     
   }
     
-  
+  Write-Output "Performed on host: $($env:ComputerName)"
